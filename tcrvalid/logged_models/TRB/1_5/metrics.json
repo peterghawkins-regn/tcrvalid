@@ -1,0 +1,12 @@
+{
+    "insert_loss": 0.24266718327999115,
+    "kl_loss": 79.99954223632812,
+    "loss": 0.595251739025116,
+    "reconstruction_loss": 0.4288012385368347,
+    "restored_epoch": 85.0,
+    "stopped_epoch": 95.0,
+    "val_insert_loss": 0.24000772833824158,
+    "val_kl_loss": 80.35846710205078,
+    "val_loss": 0.7305063009262085,
+    "val_reconstruction_loss": 0.37203919887542725
+}
