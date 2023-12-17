@@ -167,3 +167,4 @@ comparitor_tooling/transformer/TCRBERT/lib/
 comparitor_tooling/transformer/TCRBERT/outputs/
 comparitor_tooling/transformer/TCRBERT/new*
 comparitor_tooling/clustcr/lib/
+notebooks/VgeneScores.txt

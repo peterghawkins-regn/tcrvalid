@@ -33,7 +33,7 @@ setup(
     name="tcrvalid",
     author="Regeneron Pharmaceuticals",
     description="smooth and disentangled TCR representations for clustering and classification",
-    version="0.0.1",
+    version="0.1.0",
     #packages=find_packages(),
     packages=['tcrvalid'],
     package_dir={'tcrvalid': 'tcrvalid'},
