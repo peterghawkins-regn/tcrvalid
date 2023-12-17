@@ -19,6 +19,8 @@ In case there are any issues in versioning we additionally provide:
 - full_databricks_requirements.txt: used to pip install reqs to reinstate databricks runtime env used during our model training
  - minimal\_requirements.txt: installs the key packages
  
+Installation should not take more than a few minutes via pip.
+For an idea of runtime of TCRVALID - check out the results in results\_data/timings
  
 Models and data
 ----------------
