@@ -1,0 +1,2 @@
+,n_clusters,n_epitopes_captured,percent_clustered,percent_clustered_in_largest,percent_labeled_clustered,mean_purity,well_clustered_total,well_clustered
+tcrvalid,239,15,27.682403433476395,1.0729613733905579,27.682403433476395,84.2223755268336,14.684242795830778,53.0454042081949

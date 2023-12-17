@@ -1,0 +1,2 @@
+,n_clusters,n_epitopes_captured,percent_clustered,percent_clustered_in_largest,percent_labeled_clustered,mean_purity,c-CSI,c-precision,minsize,method
+0,168.0,14.0,18.771511781837436,0.3441885093989939,13.51931330472103,85.63186209925341,8.12385039852851,60.090702947845806,3,GLIPH
