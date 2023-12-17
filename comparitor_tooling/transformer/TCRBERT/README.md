@@ -1,0 +1,3 @@
+ - Use tcrbert.yml to make a conda environment.
+ - run sh setup.sh to grab a copy of tcrbert code in /lib/ dir inside this dir
+ - run: python run_tcrbert_clustering.py -c {chain} with chain as TRB or TRA

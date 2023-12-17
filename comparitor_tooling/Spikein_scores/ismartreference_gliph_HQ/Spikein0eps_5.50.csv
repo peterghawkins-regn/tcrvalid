@@ -1,0 +1,3 @@
+,index,n_clusters,n_epitopes_captured,percent_clustered,percent_clustered_in_largest,percent_labeled_clustered,mean_purity,well_clustered_total,well_clustered,method,eps,minsize,spike_x,label_reference,fold
+0,ismart,76,13,42.13421342134213,5.6105610561056105,42.13421342134213,87.5696072503348,23.982398239823983,56.91906005221932,ismart,5.50,2,0,gliph_HQ,0
+0,ismart,37,10,33.55335533553355,5.6105610561056105,33.55335533553355,89.33216624393094,17.821782178217823,53.114754098360656,ismart,5.50,3,0,gliph_HQ,0
