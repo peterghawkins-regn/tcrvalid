@@ -31,7 +31,7 @@ The following will load a single named model for TRB CDR2-CDR3 sequences:
 ```
 from tcrvalid.load_models import *
 model_name = '1_2'
-loaded_trb_models = load_named_models(model_name,chain='TRB',as_keras=from_keras)[model_name]
+loaded_trb_models = load_named_models(model_name,chain='TRB',as_keras=True)[model_name]
 ```
 
 where for TRB available model names are:
@@ -49,8 +49,36 @@ Multiple models can be collected into a python dictionary for looping through th
 from tcrvalid.load_models import *
 #  model_names is a list of model names to collect
 model_names = ['1_2','1_5']
-loaded_trb_models = load_named_models(model_names,chain='TRB',as_keras=from_keras)
+loaded_trb_models = load_named_models(model_names,chain='TRB',as_keras=True)
 ```
+
+### Example embedding
+
+```
+from tcrvalid.load_models import *
+from tcrvalid.physio_embedding import SeqArrayDictConverter
+# get model for TRB
+model_name = '1_2_full_40'
+model = load_named_models(model_name,chain='TRB',as_keras=True)[model_name]
+
+# get mapping object to convert protein sequence 
+# to physicochemical representation
+mapping = SeqArrayDictConverter()
+
+# convert seq to physicochemical - list could have many sequences
+# sequences are "CDR2-CDR3" formatted
+x = mapping.seqs_to_array(['FYNNEI-ASSETLAGANTQY'],maxlen=28)
+
+# get TCR-VALID representation
+z,_,_ = model.predict(x)
+print(z)
+# expect:
+# [[ 0.2436572  -1.5467906  -0.63847804  0.83660173  0.10755217 -0.28501382
+#    0.9832421  -0.19073558  0.38733137 -0.5093988   0.5247447  -0.660075
+#    0.04878296  0.5692204  -1.3631787   1.3796847 ]]
+```
+
+Embeddings of TCRs such as this can be used for clustering, classification, generation. More examples of such cases can be found in notebooks/. Package imports should take ~5s, model loading ~1.5s, and embedding calculation <1s. Times based on a 4-core CPU machine.
  
 #### *data*
 
