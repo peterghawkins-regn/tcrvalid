@@ -1,9 +1,11 @@
 TCR-VALID: TCR Variational Autoencoder Landscape for Interpretable Dimensions
 ===============================================================================
 
-This is a package for building capacity controlled VAEs for TCR sequence data.
+This is a package for TCR-VALID: capacity controlled VAEs for TCR sequence data.
 
-Inside there are tools to train representation models of TCR sequences and investigate their smoothness, disentanglement and ability to cluster and classify TCRs.
+This package is associated with the [publication](https://doi.org/10.1038/s41467-024-48198-0): Leary, Allen Y., et al. "Designing meaningful continuous representations of T cell receptor sequences with deep generative models." Nature Communications (2024) 
+
+Any and all future code development will occur on the forked repo: https://github.com/regeneron-mpds/tcrvalid/.
 
 
 Installation
